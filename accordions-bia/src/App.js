@@ -4,10 +4,14 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import DenseTable from './Table.js'; // Importe o componente da tabela
+import DenseTable from './Table.js';
 import { Button } from '@mui/material';
 import ButtonSalvar from './Button.js';
 import "../src/App.css";
+import CheckListRapida from "../src/CheckListRapida.js"
+import ReceitaInsulinaBasal from '../src/ReceitaInsulinaBasal.js';
+import ReceitaInsulinaRapida from './ReceitaInsulinaRapida.js';
+import RelatorioManutencaoInsulina from './RelatorioManutencaoInsulina.js';
 
 export default function SimpleAccordion() {
   return (
@@ -18,7 +22,7 @@ export default function SimpleAccordion() {
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography>Accordion 1</Typography>
+          <Typography>Controle Glicemia</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <DenseTable /> {/* Adicione o componente da tabela aqui */}
@@ -32,10 +36,10 @@ export default function SimpleAccordion() {
           aria-controls="panel2a-content"
           id="panel2a-header"
         >
-          <Typography className='accordion'>Accordion 2</Typography>
+          <Typography className='accordion'>Receita Insulina Basal</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <DenseTable />
+          <ReceitaInsulinaBasal />
           <ButtonSalvar />
         </AccordionDetails>
       </Accordion>
@@ -45,10 +49,36 @@ export default function SimpleAccordion() {
           aria-controls="panel3a-content"
           id="panel3a-header"
         >
-          <Typography>Accordions 3</Typography>
+          <Typography>Check List Rápida</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <DenseTable />
+          <CheckListRapida />
+          <ButtonSalvar />
+        </AccordionDetails>
+      </Accordion>
+      <Accordion>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel3a-content"
+          id="panel3a-header"
+        >
+          <Typography>Receita Insulina Rápida</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <ReceitaInsulinaRapida />
+          <ButtonSalvar />
+        </AccordionDetails>
+      </Accordion>
+      <Accordion>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel3a-content"
+          id="panel3a-header"
+        >
+          <Typography>Relatório Manutenção de Insulina</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <RelatorioManutencaoInsulina />
           <ButtonSalvar />
         </AccordionDetails>
       </Accordion>
