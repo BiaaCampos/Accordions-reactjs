@@ -5,13 +5,17 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import DenseTable from './Table.js';
-import { Button } from '@mui/material';
+// import { Button } from '@mui/material';
 import ButtonSalvar from './Button.js';
 import "../src/App.css";
 import CheckListRapida from "../src/CheckListRapida.js"
 import ReceitaInsulinaBasal from '../src/ReceitaInsulinaBasal.js';
 import ReceitaInsulinaRapida from './ReceitaInsulinaRapida.js';
 import RelatorioManutencaoInsulina from './RelatorioManutencaoInsulina.js';
+import RelatorioPrescricaoInicialInsulina from './RelatorioPrescricaoInicialInsulina.js';
+import TermoConflitos from './TermoConflito.js';
+import FormularioMedicina from './FormularioMedico.js';
+
 
 export default function SimpleAccordion() {
   return (
@@ -25,11 +29,10 @@ export default function SimpleAccordion() {
           <Typography>Controle Glicemia</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <DenseTable /> {/* Adicione o componente da tabela aqui */}
+          <DenseTable />
           <ButtonSalvar />
         </AccordionDetails>
-      </Accordion>
-      {/* Repita o mesmo padrão para os outros Accordions */}
+      </Accordion> 
       <Accordion>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
@@ -79,6 +82,45 @@ export default function SimpleAccordion() {
         </AccordionSummary>
         <AccordionDetails>
           <RelatorioManutencaoInsulina />
+          <ButtonSalvar />
+        </AccordionDetails>
+      </Accordion>
+      <Accordion>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel3a-content"
+          id="panel3a-header"
+        >
+          <Typography>Relatório Prescrição Inicial Insulina</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <RelatorioPrescricaoInicialInsulina />
+          <ButtonSalvar />
+        </AccordionDetails>
+      </Accordion>
+      <Accordion>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel3a-content"
+          id="panel3a-header"
+        >
+          <Typography>Termo de Conflito</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <TermoConflitos />
+          <ButtonSalvar />
+        </AccordionDetails>
+      </Accordion>
+      <Accordion>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel3a-content"
+          id="panel3a-header"
+        >
+          <Typography>Formulário Medicina</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <FormularioMedicina />
           <ButtonSalvar />
         </AccordionDetails>
       </Accordion>
