@@ -227,40 +227,40 @@ const FormularioMedicina = () => {
             <div className="outras-morbidades">
               <table className="table-outras-morbidades">
                 <tr>
-                  <th className="th-doenca">Doença</th>
-                  <th className="th-doenca">Medicamento</th>
-                  <th className="th-doenca">Dose</th>
+                  <th className="th-doenca doenca-div">Doença</th>
+                  <th className="th-doenca doenca-div">Medicamento</th>
+                  <th className="th-doenca doenca-div">Dose</th>
                 </tr>
                 <tr>
-                  <td>
+                  <td className="doenca-div">
                     <input type={"text"} className="Input-doenca"></input>
                   </td>
-                  <td>
+                  <td className="doenca-div">
                     <input type={"text"} className="Input-doenca"></input>
                   </td>
-                  <td>
-                    <input type={"text"} className="Input-doenca"></input>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <input type={"text"} className="Input-doenca"></input>
-                  </td>
-                  <td>
-                    <input type={"text"} className="Input-doenca"></input>
-                  </td>
-                  <td>
+                  <td className="doenca-div">
                     <input type={"text"} className="Input-doenca"></input>
                   </td>
                 </tr>
                 <tr>
-                  <td>
+                  <td className="doenca-div">
                     <input type={"text"} className="Input-doenca"></input>
                   </td>
-                  <td>
+                  <td className="doenca-div">
                     <input type={"text"} className="Input-doenca"></input>
                   </td>
-                  <td>
+                  <td className="doenca-div">
+                    <input type={"text"} className="Input-doenca"></input>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="doenca-div">
+                    <input type={"text"} className="Input-doenca"></input>
+                  </td>
+                  <td className="doenca-div">
+                    <input type={"text"} className="Input-doenca"></input>
+                  </td>
+                  <td className="doenca-div">
                     <input type={"text"} className="Input-doenca"></input>
                   </td>
                 </tr>
