@@ -15,6 +15,7 @@ import RelatorioManutencaoInsulina from './RelatorioManutencaoInsulina.js';
 import RelatorioPrescricaoInicialInsulina from './RelatorioPrescricaoInicialInsulina.js';
 import TermoConflitos from './TermoConflito.js';
 import FormularioMedicina from './FormularioMedico.js';
+import Admin from './Admin.js';
 
 
 export default function SimpleAccordion() {
@@ -121,6 +122,19 @@ export default function SimpleAccordion() {
         </AccordionSummary>
         <AccordionDetails>
           <FormularioMedicina />
+          <ButtonSalvar />
+        </AccordionDetails>
+      </Accordion>
+      <Accordion>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel3a-content"
+          id="panel3a-header"
+        >
+          <Typography>Teste</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Admin />
           <ButtonSalvar />
         </AccordionDetails>
       </Accordion>
